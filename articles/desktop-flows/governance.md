@@ -156,11 +156,11 @@ IT administrators may set the following registry key to configure how Power Auto
 
 ***Value***
 
-- **ProxyAddress:Port** (for example, `https://myproxy.com:3128`): The proxy server and port configured override the proxy server and port configured in Windows.
+- **ProxyAddress:Port** (for example, `https://myproxy.com:3128`): The proxy server and port configured override the proxy server and port configured in Windows. Proxy PAC Script Configuration (for example, https://myproxy.com:3128/files/proxy_corp.pac) is not supported.
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
-IT administrators may set the following registry key to configure the Power Automate's bypassing of a corporate proxy server.
+IT administrators may set the following registry key to configure the Power Automate's bypassing of a corporate proxy server. This Setting will not work if you have a Proxy PAC Script Configruation (for example, [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]"AutoConfigURL"=" https://myproxy.com:3128/files/proxy_corp.pac") in place. 
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
